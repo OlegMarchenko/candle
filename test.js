@@ -36,10 +36,10 @@ window.ondevicemotion = function(event) {
     if(xA > (width/2)) { bAL = 0; } else if(xA < (width/2)) { bAR = 0; }
     if(yA < (height/2)) { bAB = 0; } else if(yA > (height/2)) { bAT = 0; }
 
-    $('.right-edge').css({'box-shadow' : 'inset 0 0 500px 500px rgba(0,0,0,'+bAR+')'});
-    $('.left-edge').css({'box-shadow' : 'inset 0 0 500px 500px rgba(0,0,0,'+bAL+')'});
-    $('.top-edge').css({'box-shadow' : 'inset 0 0 500px 500px rgba(0,0,0,'+bAT+')'});
-    $('.bottom-edge').css({'box-shadow' : 'inset 0 0 500px 500px rgba(0,0,0,'+bAB+')'});
+    $('.flame').css({'box-shadow' : 'inset 0 0 500px 500px rgba(0,0,0,'+bAR+')'});
+    $('.flame').css({'box-shadow' : 'inset 0 0 500px 500px rgba(0,0,0,'+bAL+')'});
+    $('.flame').css({'box-shadow' : 'inset 0 0 500px 500px rgba(0,0,0,'+bAT+')'});
+    $('.flame').css({'box-shadow' : 'inset 0 0 500px 500px rgba(0,0,0,'+bAB+')'});
 
     $('#container').css({'transform-origin' : xA+'px '+yA+'px'});
 };
